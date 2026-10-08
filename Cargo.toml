@@ -1,9 +1,9 @@
 [package]
 name = "sootmark-defender"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 rust-version = "1.80"
-description = "Microsoft Defender for forensics: its detection history files (what was detected, where, when, by which process, for which user, and the file's SHA-256)."
+description = "Microsoft Defender for forensics: its detection history files (what was detected, where, when, by which process, for which user, and the file's SHA-256) and its protection logs (MPLog: detections, programs scanned, exclusions, telemetry)."
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Sootmark/defender"
 homepage = "https://sootmark.com"

@@ -21,8 +21,16 @@
 //! ```
 //!
 //! Damage is reported in `problems`, never a panic.
+//!
+//! [`read_mplog`] reads the protection logs (`Support\MPLog-*.log`):
+//! detections, programs scanned, exclusions, blocked files, behaviour
+//! monitoring telemetry.
 
 use common::time::Ts;
+
+mod mplog;
+
+pub use mplog::{is_mplog_name, read_mplog, Entry, EntryKind, MpLog};
 
 /// This crate's version, for records of what parsed them.
 pub const VERSION: &str = env!("CARGO_PKG_VERSION");
